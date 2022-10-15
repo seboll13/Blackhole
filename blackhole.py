@@ -16,7 +16,7 @@ class Blackhole():
         fg = G*self.mass/r**2
         # add velocity to object
         force.set_magnitude(fg)
-        photon.pos += force
+        #photon.pos += force
         # limit photon to light speed
         if photon.velocity.get_magnitude() > c:
             photon.velocity.set_magnitude(c)
